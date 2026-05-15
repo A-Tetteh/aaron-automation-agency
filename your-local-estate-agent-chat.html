@@ -620,6 +620,8 @@
             // Handle various response shapes from n8n
             if (typeof data === 'string') {
               reply = data;
+            } else if (data.answer) {
+              reply = data.answer;
             } else if (data.output) {
               reply = data.output;
             } else if (data.reply) {
