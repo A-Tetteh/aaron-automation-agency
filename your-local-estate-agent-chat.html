@@ -609,7 +609,7 @@
         const res = await fetch(WEBHOOK_URL, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ message, source: 'estate-agent-widget' })
+          body: JSON.stringify({ question: message })
         });
 
         let reply = 'Thank you for your message. One of our property advisors will be in touch shortly.';
